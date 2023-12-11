@@ -54,32 +54,44 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
 ```bash
 http://localhost:3000/
 ```
-![GET 1](Imagenes/Peticiones GET/GET-1.png)
+![GET 1](Imagenes/Peticiones-GET/GET-1.png)
 
 2. Retorna un JSON con los pacientes registrados
 ```bash
 http://localhost:3000/api/pacientes
 ```
+![GET 2](Imagenes/Peticiones-GET/GET-2.png)
+
 3. Retorna un JSON con el paciente asociado al id que se solicite
 ```bash
 http://localhost:3000/api/pacientes/:id
 ```
+![GET 3](Imagenes/Peticiones-GET/GET-3.png)
+
 4. Retorna un JSON con los doctores registrados
 ```bash
 http://localhost:3000/api/doctores
 ```
+![GET 4](Imagenes/Peticiones-GET/GET-4.png)
+
 5. Retorna un JSON con el doctor asociado al id que se solicite
 ```bash
 http://localhost:3000/api/doctores/:id
 ```
+![GET 5](Imagenes/Peticiones-GET/GET-5.png)
+
 6. Retorna un JSON con las citas registradas
 ```bash
 http://localhost:3000/api/citas
 ```
+![GET 6](Imagenes/Peticiones-GET/GET-6.png)
+
 7. Retorna un JSON con la cita asociado segun los parametros query enviados de fecha_hora,id_profesional,id_numeroCedula
 ```bash
 http://localhost:3000/api/citas/one-cita/?fecha=2023-12-11T00:00:00.000Z&profesional=id_profesional&paciente=id_numeroCedula
 ```
+![GET 7](Imagenes/Peticiones-GET/GET-7.png)
+
 ## MODELO JSON
 
 Para las peticiones POST Y PUT, se requiere enviar un JSON con los datos necesarios para cada caso, pacientes, doctores o citas
