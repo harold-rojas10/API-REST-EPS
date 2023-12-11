@@ -1,10 +1,10 @@
 # API REST EPS - CENTRO MEDICO
 Tecnología utilizada
-    . Node.js
-    . Express.js
-    . MySQL
-    . Sequelize
-    . Typescript
+- Node.js
+- Express.js
+- MySQL
+- Sequelize
+- Typescript
 ## DESARROLLADA POR 
     - Harold Eduardo Rojas Clavijo, Diciembre 2023
 
