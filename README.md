@@ -15,8 +15,7 @@ Tecnología utilizada
     
 ### Nota: 
 
-    No se requiere crear tablas, pues Sequelize se encarga de crear las tablas a partir del siguiente modelo relacional
-
+No se requiere crear tablas, pues Sequelize se encarga de crear las tablas a partir del siguiente modelo relacional
 - **Doctores** = (**id_prof**, nombre, apellido, especialidad, correo)
 - **Pacientes** = (**num_cedula**, nombre, apellido, fecha_nac, telefono)
 - **Cita** = (**fecha_hora**, ***id_prof***, ***num_cedula***)
@@ -42,8 +41,12 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
     npm run dev
 ```
 
-4. Se comprueba que esta corriendo la API si en la terminal sale el siguiente mensaje
+4. Se comprueba que esta corriendo la API, si en la terminal sale el siguiente mensaje
 
     ![Api Corriendo](Imagenes/API-Run.png)
 
+5. Ya corriendo la API, con POSTMAN se prueba cada una de las peticiones establecidas para la API
 
+## PETICIONES SOPORTADAS POR LA API
+
+1. 
