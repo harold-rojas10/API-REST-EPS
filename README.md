@@ -131,39 +131,57 @@ Para las peticiones POST Y PUT, se requiere enviar un JSON con los datos necesar
 ```bash
 http://localhost:3000/api/pacientes 
 ```
+![POST 1](Imagenes/Peticiones-POST/POST-1.png)
+
 2. Envia el JSON de doctores con los datos diligenciados
 ```bash
 http://localhost:3000/api/doctores
 ```
+![POST 2](Imagenes/Peticiones-POST/POST-2.png)
+
 3. Envia el JSON de citas con los datos diligenciados
 ```bash
 http://localhost:3000/api/citas
 ```
+![POST 3](Imagenes/Peticiones-POST/POST-3.png)
+
 ## PETICIONES PUT
 
 1. Envia el JSON de pacientes con los datos diligenciados
 ```bash
 http://localhost:3000/api/pacientes/:id
 ```
+![PUT 1](Imagenes/Peticiones-PUT/PUT-1.png)
+
 2. Envia el JSON de doctores con los datos diligenciados
 ```bash
 http://localhost:3000/api/doctores/:id
 ```
+![PUT 2](Imagenes/Peticiones-PUT/PUT-2.png)
+
 3. Envia el JSON de citas con los datos diligenciados
 ```bash
 http://localhost:3000/api/citas/?fecha=2023-12-11T00:00:00.000Z&profesional=id_profesional&paciente=id_numeroCedula
 ```
+![PUT 3](Imagenes/Peticiones-PUT/PUT-3.png)
+
 ## PETICIONES DELETE
 
 1. Elimina el paciente correspondiente al id
 ```bash
 http://localhost:3000/api/pacientes/:id
 ```
+![DELETE 1](Imagenes/Peticiones-DELETE/DELETE-1.png)
+
 2. Elimina el doctor correspondiente al id
 ```bash
 http://localhost:3000/api/doctores/:id
 ```
+![DELETE 2](Imagenes/Peticiones-DELETE/DELETE-2.png)
+
 3. Elimina la cita correspondiente segun los parametros query enviados de fecha_hora,id_profesional,id_numeroCedula
 ```bash
 http://localhost:3000/api/citas/?fecha=2023-12-11T00:00:00.000Z&profesional=id_profesional&paciente=id_numeroCedula
 ```
+![DELETE 3](Imagenes/Peticiones-DELETE/DELETE-3.png)
+
