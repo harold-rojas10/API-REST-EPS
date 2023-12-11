@@ -62,6 +62,25 @@ http://localhost:3000/api/pacientes
 ```bash
 http://localhost:3000/api/pacientes/:id
 ```
-4. 
+4. Retorna un JSON con los doctores registrados
+```bash
+http://localhost:3000/api/doctores
+```
+5. Retorna un JSON con el doctor asociado al id que se solicite
+```bash
+http://localhost:3000/api/doctores/:id
+```
+6. Retorna un JSON con las citas registradas
+```bash
+http://localhost:3000/api/citas
+```
+7. Retorna un JSON con la cita asociado segun los parametros query enviados de fecha_hora,id_profesional,id_numeroCedula
+```bash
+http://localhost:3000/api/citas/one-cita
 
+```
 ## PETICIONES POST
+
+## PETICIONES PUT
+
+## PETICIONES DELETE
