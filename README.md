@@ -12,13 +12,14 @@ Tecnología utilizada
    - Tener instalado Node.js
    - Tener instalado MySQL
    - Crear una base de datos en MySQL con el nombre "EPS"
-    Nota: 
+    
+### Nota: 
 
     No se requiere crear tablas, pues Sequelize se encarga de crear las tablas a partir del siguiente modelo relacional
 
-    - **Doctores** = (**id_prof**, nombre, apellido, especialidad, correo)
-    - **Pacientes** = (**num_cedula**, nombre, apellido, fecha_nac, telefono)
-    - **Cita** = (**fecha_hora**, ***id_prof***, ***num_cedula***)
+- **Doctores** = (**id_prof**, nombre, apellido, especialidad, correo)
+- **Pacientes** = (**num_cedula**, nombre, apellido, fecha_nac, telefono)
+- **Cita** = (**fecha_hora**, ***id_prof***, ***num_cedula***)
 
 ## PASOS PARA UTILIZAR LA API
 
