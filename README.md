@@ -6,12 +6,12 @@ Tecnología utilizada
 - Sequelize
 - Typescript
 ## DESARROLLADA POR 
-    - Harold Eduardo Rojas Clavijo, Diciembre 2023
+- Harold Eduardo Rojas Clavijo, Diciembre 2023
 
 ## REQUISITOS
-    - Tener instalado Node.js
-    - Tener instalado MySQL
-    - Crear una base de datos en MySQL con el nombre "EPS"
+   - Tener instalado Node.js
+   - Tener instalado MySQL
+   - Crear una base de datos en MySQL con el nombre "EPS"
     Nota: 
 
     No se requiere crear tablas, pues Sequelize se encarga de crear las tablas a partir del siguiente modelo relacional
