@@ -16,9 +16,9 @@ Tecnología utilizada
 ### Nota: 
 
 No se requiere crear tablas, pues Sequelize se encarga de crear las tablas a partir del siguiente modelo relacional
-- **Doctores** = (**id_prof**, nombre, apellido, especialidad, correo)
-- **Pacientes** = (**num_cedula**, nombre, apellido, fecha_nac, telefono)
-- **Cita** = (**fecha_hora**, ***id_prof***, ***num_cedula***)
+- **doctor** = (**id_profesional**, nombre, apellido, telefono, especialidad, correo)
+- **paciente** = (**id_numeroCedula**, nombre, apellido, fecha_nacimiento, telefono)
+- **cita** = (**fecha_hora**, ***id_profesional***, ***id_numeroCedula***)
 
 ## PASOS PARA UTILIZAR LA API
 
@@ -54,9 +54,10 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
 ```bash
 http://localhost:3000/
 ```
+![GET 1](Imagenes/GET-1.png)
 2. Retorna un JSON con los pacientes registrados
 ```bash
-http://localhost:3000/api/pacientes 
+http://localhost:3000/api/pacientes
 ```
 3. Retorna un JSON con el paciente asociado al id que se solicite
 ```bash
