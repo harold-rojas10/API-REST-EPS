@@ -81,6 +81,49 @@ http://localhost:3000/api/citas/one-cita
 ```
 ## PETICIONES POST
 
+Para las peticiones POST, se requiere enviar un JSON con los datos necesarios para cada caso, pacientes, doctores o citas
+
+- **JSON PACIENTES**
+```bash
+{
+    "id_numeroCedula": number,
+    "nombre": "string",
+    "apellido": "string",
+    "fecha_nacimiento": "Date AAAA-MM-DD",
+    "telefono": "string"
+}
+```
+- **JSON DOCTORES**
+```bash
+{
+    "id_profesional": number,
+    "nombre": "string",
+    "apellido": "string",
+    "correo": "string",
+    "telefono": "string",
+    "especialidad": "medicina_interna||medicina_general"
+}
+```
+- **JSON CITAS**
+```bash
+{
+    "fecha_hora": "Date AAAA-MM-DD HH:MM:SS",
+    "id_profesional": "number",
+    "id_numeroCedula": "number"
+}
+```
+1. Envia el JSON de pacientes con los datos diligenciados
+```bash
+http://localhost:3000/api/pacientes 
+```
+2. Envia el JSON de doctores con los datos diligenciados
+```bash
+http://localhost:3000/api/doctores
+```
+3. Envia el JSON de citas con los datos diligenciados
+```bash
+http://localhost:3000/api/citas
+```
 ## PETICIONES PUT
 
 ## PETICIONES DELETE
