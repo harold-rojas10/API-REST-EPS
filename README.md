@@ -1,5 +1,5 @@
 # API REST EPS - CENTRO MEDICO
-    Tecnología utilizada
+Tecnología utilizada
     - Node.js
     - Express.js
     - MySQL
@@ -25,7 +25,9 @@
 Guia basica para ejecutar y comprobar el funcionamiento de la API REST
 
 1.  Clonar el repositorio desde la siguiente ubicacion en GITHUB 
+
 ```bash
-https://github.com/harold-rojas10/API-REST-EPS.git
+    https://github.com/harold-rojas10/API-REST-EPS.git
+
 ```
 
