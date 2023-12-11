@@ -69,7 +69,9 @@ export const updatePaciente: RequestHandler = async (req, res) => {
         }
       })
       res.status(200).json({
-        message: 'Paciente actualizado'
+        message: 'Paciente actualizado',
+        data: paciente
+
       })
     } else {
       res.status(404).json({

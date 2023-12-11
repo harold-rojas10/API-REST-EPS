@@ -76,12 +76,11 @@ http://localhost:3000/api/citas
 ```
 7. Retorna un JSON con la cita asociado segun los parametros query enviados de fecha_hora,id_profesional,id_numeroCedula
 ```bash
-http://localhost:3000/api/citas/one-cita
-
+http://localhost:3000/api/citas/one-cita/?fecha=2023-12-11T00:00:00.000Z&profesional=id_profesional&paciente=id_numeroCedula
 ```
-## PETICIONES POST
+## MODELO JSON
 
-Para las peticiones POST, se requiere enviar un JSON con los datos necesarios para cada caso, pacientes, doctores o citas
+Para las peticiones POST Y PUT, se requiere enviar un JSON con los datos necesarios para cada caso, pacientes, doctores o citas
 
 - **JSON PACIENTES**
 ```bash
@@ -107,11 +106,13 @@ Para las peticiones POST, se requiere enviar un JSON con los datos necesarios pa
 - **JSON CITAS**
 ```bash
 {
-    "fecha_hora": "Date AAAA-MM-DD HH:MM:SS",
+    "fecha_hora": "Date 2023-12-11T00:00:00.000Z",
     "id_profesional": "number",
     "id_numeroCedula": "number"
 }
 ```
+## PETICIONES POST
+
 1. Envia el JSON de pacientes con los datos diligenciados
 ```bash
 http://localhost:3000/api/pacientes 
@@ -126,4 +127,29 @@ http://localhost:3000/api/citas
 ```
 ## PETICIONES PUT
 
+1. Envia el JSON de pacientes con los datos diligenciados
+```bash
+http://localhost:3000/api/pacientes/:id
+```
+2. Envia el JSON de doctores con los datos diligenciados
+```bash
+http://localhost:3000/api/doctores/:id
+```
+3. Envia el JSON de citas con los datos diligenciados
+```bash
+http://localhost:3000/api/citas/?fecha=2023-12-11T00:00:00.000Z&profesional=id_profesional&paciente=id_numeroCedula
+```
 ## PETICIONES DELETE
+
+1. Elimina el paciente correspondiente al id
+```bash
+http://localhost:3000/api/pacientes/:id
+```
+2. Elimina el doctor correspondiente al id
+```bash
+http://localhost:3000/api/doctores/:id
+```
+3. Elimina la cita correspondiente segun los parametros query enviados de fecha_hora,id_profesional,id_numeroCedula
+```bash
+http://localhost:3000/api/citas/?fecha=2023-12-11T00:00:00.000Z&profesional=id_profesional&paciente=id_numeroCedula
+```
