@@ -47,6 +47,22 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
 
 5. Ya corriendo la API, con POSTMAN se prueba cada una de las peticiones establecidas para la API
 
-## PETICIONES SOPORTADAS POR LA API
+# PETICIONES SOPORTADAS POR LA API
 
-1. 
+## PETICIONES GET
+
+1. http://localhost:3000/
+
+    Devuelva una pagina con el siguiente mensaje "API DE EPS corriendo!"
+
+2. http://localhost:3000/api/pacientes 
+
+    Retorna un JSON con los pacientes registrados
+
+3. http://localhost:3000/api/pacientes/:id
+
+    Retorna un JSON con el paciente asociado al id que se solicite
+
+4. 
+
+## PETICIONES POST
