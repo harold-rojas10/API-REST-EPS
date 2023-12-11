@@ -31,4 +31,19 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
     https://github.com/harold-rojas10/API-REST-EPS.git
 
 ```
+2. Despues de colonar y abrir el pryecto en VS-Code, se deben instalar los paquetes requeridos con el siguiente comando en la terminal del proyecto 
+
+```bash
+    npm install || sudo npm install
+```
+3. Terminada la instalación de los paquetes, se procede a ejecutar la API con el siguiente comando
+
+```bash
+    npm run dev
+```
+
+4. Se comprueba que esta corriendo la API si en la terminal sale el siguiente mensaje
+
+    ![Api Corriendo](Imagenes/API-Run.png)
+
 
